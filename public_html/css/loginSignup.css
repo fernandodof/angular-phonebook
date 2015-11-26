@@ -1,0 +1,29 @@
+#loginSignup{
+    padding: 0 15px 0 15px;
+}
+
+#signupForm{
+    margin-bottom: 40px;
+}
+
+@media(min-width:992px){
+
+    #signupForm{
+        border-left: 1px solid #2196F3;
+    }
+}
+
+@media(max-width:991px){
+
+    #signupForm{
+        border-top: 1px solid #2196F3;
+        padding-top: 15px;
+        margin-top: 35px;
+    }
+}
+
+#facebook-button{
+    margin-top: 60px;
+    text-transform: none;
+    float: left;
+}

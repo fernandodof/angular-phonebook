@@ -1,0 +1,9 @@
+<div class="col-md-12">
+    
+    <div class="row" infinite-scroll="loadMorePeople()" infinite-scroll-distance="2">
+        
+        <cc-card ng-repeat="person in personServiceRef.peopleList" person="person" delete-person="parentDeletePerson"></cc-card>
+        
+    </div>
+    
+</div>

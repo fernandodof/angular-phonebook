@@ -1,0 +1,19 @@
+<div id="createModal" class="modal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="createModal.hide()">&times;</button>
+                <h4 class="modal-title">Create Person</h4>
+            </div>
+            <div class="modal-body">
+                <form id="addForm" ng-submit="addPerson()" class="form-horizontal" novalidate>
+                    <div class="">
+                        <ng-include src="'templates/addForm.html'"></ng-include>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

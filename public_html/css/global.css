@@ -1,0 +1,86 @@
+#main-container{
+    margin-top: 40px;
+}
+
+.selected-row{
+    background-color: lightblue;
+}
+
+.spinner{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 40px 0;
+    p{
+        margin-top: 20px;
+    }
+}
+
+#delete-button, #create-button{
+    margin-top: -5px;
+}
+
+#addForm{
+    padding: 0 20px;
+}
+
+.table tr td .profile-photo{
+    width: 45px;
+    height: 45px;
+}
+
+/*.card .profile-photo{
+    width: 140px;
+}*/
+
+.card{
+    margin-bottom: 45px;
+}
+
+.card, .profile-photo{
+    height: 150px;
+}   
+
+
+.modal-backdrop.am-fade {
+    opacity: .5;
+    transition: opacity .10s linear;
+    &.ng-enter {
+        opacity: 0;
+        &.ng-enter-active {
+            opacity: .5;
+        }
+    }
+    &.ng-leave {
+        opacity: .5;
+        &.ng-leave-active {
+            opacity: 0;
+        }
+    }
+}
+
+.sortables{
+    width: 10px;
+    height: 12px;
+    margin-right: 15px;
+    margin-top: -5px;
+}
+
+.sort-icon{
+    position: absolute;
+
+}
+.sort-icon:hover{
+    color: lightblue;       
+}
+
+
+.col-1{
+    width: 10%;
+    text-align: center;
+}
+
+.table .col-2, .col-3, .col-4{
+    width: 30%;
+}

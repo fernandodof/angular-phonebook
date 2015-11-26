@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html ng-app="phonebook">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/paper-bootstrap-theme.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-additions/dist/bootstrap-additions.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/ladda/dist/ladda-themeless.min.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/AngularJS-Toaster/toaster.min.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" type="text/css" href="css/global.css">
+        <link rel="stylesheet" type="text/css" href="css/loginSignup.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap-social/bootstrap-social.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" ui-sref="list">People</a>
+                </div>
+
+                <div ui-view="search"></div>
+                
+                <div ui-view="navbarButtons"></div>
+            </div>
+        </nav>
+        
+        <div class="container" id="main-container">
+
+            <toaster-container></toaster-container>
+
+            <div class="row">
+                <!--List-->
+                <div ui-view="main"></div>
+
+                <!--Detail-->
+
+            </div>
+        </div>
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+        <script type="text/javascript" src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+        <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+       
+        <script type="text/javascript" src="js/angular-modules/app.js"></script>
+        <script type="text/javascript" src="js/angular-modules/directives/ccSpinner.js"></script>
+        <script type="text/javascript" src="js/angular-modules/directives/ccCard.js"></script>
+        <script type="text/javascript" src="js/angular-modules/config/config.js"></script>
+        <script type="text/javascript" src="js/angular-modules/config/AuthConfig.js"></script>
+        <script type="text/javascript" src="js/angular-modules/controllers/person/PersonDetailController.js"></script>
+        <script type="text/javascript" src="js/angular-modules/controllers/person/PersonCreateController.js"></script>
+        <script type="text/javascript" src="js/angular-modules/controllers/person/PersonListController.js"></script>
+        <script type="text/javascript" src="js/angular-modules/controllers/auth/AuthController.js"></script>
+        <script type="text/javascript" src="js/angular-modules/filters/defaultImage.js"></script>
+        <script type="text/javascript" src="js/angular-modules/services/PersonService.js"></script>
+        <script type="text/javascript" src="js/angular-modules/services/UserService.js"></script>
+        <script type="text/javascript" src="js/angular-modules/factories/Person.js"></script>
+        <script type="text/javascript" src="js/angular-modules/factories/User.js"></script>
+        
+        <script type="text/javascript" src="bower_components/satellizer/satellizer.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-auto-validate/dist/jcs-auto-validate.min.js"></script>
+        <script type="text/javascript" src="bower_components/ladda/js/spin.js"></script>
+        <script type="text/javascript" src="bower_components/ladda/dist/ladda.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-ladda/dist/angular-ladda.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-resource/angular-resource.min.js"></script> 
+        <script type="text/javascript" src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.min.js"></script>
+        <script type="text/javascript" src="bower_components/AngularJS-Toaster/toaster.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script type="text/javascript" src="bower_components/spin.js/spin.js"></script>
+        <script type="text/javascript" src="bower_components/angular-spinner/angular-spinner.min.js"></script>
+        <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+        
+    </body>
+</html>

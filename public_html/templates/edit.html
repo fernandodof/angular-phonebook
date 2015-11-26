@@ -1,0 +1,30 @@
+<div class="col-md-8 col-md-offset-2 ">
+    <form novalidate="novalidate" ng-submit="save()">
+
+        <div class="panel panel-default">
+            <div class="panel-heading detail-heading">
+                {{mode}}
+                <div class="pull-right">
+                    <button class="btn btn-primary btn-sm" id="create-button"
+                            ladda="personServiceRef.isDeleting"
+                            type="submit"
+                            <span ng-show="!personServiceRef.isSaving">Save</span>
+                        <span ng-show="personServiceRef.isSaving">Saving</span>
+                    </button>
+                    <button class="btn btn-danger btn-sm" id="delete-button"
+                            ladda="personServiceRef.isDeleting"
+                            ng-click="delete()"
+                            ng-show="mode == 'Edit'">
+                        <span ng-show="!personServiceRef.isDeleting">Delete <i class="fa fa-trash"></i></span>
+                        <span ng-show="personServiceRef.isDeleting">Deleting</span>
+                    </button>
+                </div>
+            </div>
+            <div class="panel-body">
+
+                <ng-include src="'templates/addForm.html'"></ng-include>
+
+            </div>
+        </div>
+    </form>
+</div>

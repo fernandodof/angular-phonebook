@@ -1,0 +1,27 @@
+{
+    "elements": {
+        "ng-include": {},
+        "cc-spinner": {},
+        "toaster-container": {}
+    },
+    "attributes": {
+        "us-spinner": {
+            "context": "span"
+        },
+        "infinite-scroll-distance": {
+            "context": "table"
+        },
+        "ladda": {
+            "context": "button"
+        },
+        "ui-view": {
+            "context": "div"
+        },
+        "ui-sref": {
+            "context": "a"
+        },
+        "ui-sref-active": {
+            "context": "li"
+        }
+    }
+}
